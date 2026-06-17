@@ -1,6 +1,7 @@
 # EdgeAI-SIG
 
 ## Real-Time TinyML Framework for Signal Integrity Forecasting and Adaptive Reconstruction in Resource-Constrained Edge Systems
+[Dash is running on http://127.0.0.1:8050/]
 EdgeAI-SIG is an Edge AI and TinyML framework designed for real-time signal quality monitoring, forecasting, and reconstruction in resource-constrained environments.
 Unlike traditional predictive maintenance systems that focus on equipment failures, EdgeAI-SIG focuses on **signal intelligence**. The system continuously generates communication and sensor-inspired signals, simulates realistic degradation conditions, evaluates signal quality using a composite Signal Quality Index (SQI), forecasts future signal quality using a lightweight neural network, and adaptively reconstructs degraded signals.
 The framework demonstrates how signal integrity can be monitored and improved directly at the edge using TinyML-compatible models.
