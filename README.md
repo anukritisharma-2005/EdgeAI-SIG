@@ -22,26 +22,6 @@ EdgeAI-SIG introduces a proactive approach:
 3. Apply adaptive reconstruction before severe quality loss.
 4. Deploy lightweight inference suitable for embedded systems.
 
-
-System Architecture
-
-Signal Generator
-      ↓
-Noise Injection Engine
-      ↓
-Feature Extraction
-      ↓
-Signal Quality Index (SQI)
-      ↓
-TinyML SQI Forecaster
-      ↓
-Adaptive Reconstruction Engine
-      ↓
-TensorFlow Lite INT8 Deployment
-      ↓
-Dash + Plotly Dashboard
-
-
 Supported Signal Types
 * RF-inspired signals
 * Chirp signals
