@@ -9,14 +9,9 @@ EdgeAI-SIG is an Edge AI and TinyML framework designed for real-time signal qual
 Unlike traditional predictive maintenance systems that focus on equipment failures, EdgeAI-SIG focuses on **signal intelligence**. The system continuously generates communication and sensor-inspired signals, simulates realistic degradation conditions, evaluates signal quality using a composite Signal Quality Index (SQI), forecasts future signal quality using a lightweight neural network, and adaptively reconstructs degraded signals.
 The framework demonstrates how signal integrity can be monitored and improved directly at the edge using TinyML-compatible models.
 
-Motivation
-
-Modern edge devices operate in noisy and resource-constrained environments where communication and sensing signals are frequently degraded by interference, quantization effects, transmission errors, and environmental noise.
-
+Motivation:Modern edge devices operate in noisy and resource-constrained environments where communication and sensing signals are frequently degraded by interference, quantization effects, transmission errors, and environmental noise.
 Conventional approaches typically react after signal corruption has already occurred.
-
 EdgeAI-SIG introduces a proactive approach:
-
 1. Monitor signal quality continuously.
 2. Forecast future signal degradation.
 3. Apply adaptive reconstruction before severe quality loss.
@@ -28,10 +23,7 @@ Supported Signal Types
 * Telemetry signals
 * Multi-frequency communication signals
 
-
-
-Noise Models
-The framework supports multiple degradation mechanisms:
+Noise Models:The framework supports multiple degradation mechanisms:
 * Gaussian Noise
 * Impulse Noise
 * Burst Noise
@@ -39,8 +31,7 @@ The framework supports multiple degradation mechanisms:
 * Sensor Drift
 * Packet Loss Simulation
 
-Signal Quality Index (SQI)
-Signal quality is evaluated using a composite Signal Quality Index derived from multiple signal integrity metrics:
+Signal Quality Index (SQI):Signal quality is evaluated using a composite Signal Quality Index derived from multiple signal integrity metrics:
 * Signal-to-Noise Ratio (SNR)
 * Root Mean Square Error (RMSE)
 * Correlation Coefficient
@@ -48,22 +39,18 @@ Signal quality is evaluated using a composite Signal Quality Index derived from 
 * Energy Ratio
 The resulting SQI provides a normalized measure of overall signal integrity.
 
-
-
-TinyML Forecasting Model
-A lightweight neural network is trained to forecast future SQI values from extracted signal features.
+TinyML Forecasting Model:A lightweight neural network is trained to forecast future SQI values from extracted signal features.
 Model Characteristics
 
  Metric              Value          
- Parameters           897            
- Model Size           4.25 KB       
- Quantization         INT8          
- Deployment Format    TensorFlow Lite 
- Forecast MAE         4.29            
+ Parameters - 897            
+ Model Size  - 4.25 KB       
+ Quantization  - INT8          
+ Deployment Format - TensorFlow Lite 
+ Forecast MAE   - 4.29            
 The model is intentionally designed for deployment on memory-constrained embedded platforms.
 
-Adaptive Reconstruction Engine
-The reconstruction engine dynamically selects reconstruction strategies based on forecasted signal quality.
+Adaptive Reconstruction Engine:The reconstruction engine dynamically selects reconstruction strategies based on forecasted signal quality.
 
 Supported methods include:
 * Savitzky-Golay Filtering
@@ -72,8 +59,7 @@ Supported methods include:
 * No Reconstruction (Baseline)
 The objective is to improve signal quality while maintaining low computational overhead.
 
-Dashboard Features
-The Dash + Plotly dashboard provides:
+Dashboard Features:The Dash + Plotly dashboard provides:
 * Signal Quality Monitoring
 * SQI Forecast Visualization
 * Signal Reconstruction Visualization
@@ -93,7 +79,6 @@ TinyML Deployment
  Reconstruction Performance
 * Average SQI Improvement: 11.62
 * Average SQI Gain: 24.31%
-
 
 
 Technologies Used
@@ -140,5 +125,4 @@ Potential applications include:
 
 Author
 Anukriti Sharma
-Electronics and Communication Engineering
-Edge AI • TinyML • Signal Processing • Embedded Systems
+
